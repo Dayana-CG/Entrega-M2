@@ -1,0 +1,184 @@
+/** Reset CSS */
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    a{
+        text-decoration: none;
+    }
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px black;
+    text-align: center;
+    padding: 1rem;
+}
+h2 {
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px black;
+    text-align: center;
+    padding: 10px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.uno {
+    display: block;
+    margin: auto;
+    width: 25rem;
+    height: 32rem;
+    border-radius: 20px;
+}
+
+.interior-1 {
+    width: 100%;
+    height: 100%;
+    border: black 2px solid;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.interior {
+    width: 100%;
+    height: 100%;
+    border: black 2px solid;
+    border-radius: 20px;
+    background-color: #02b9bc;
+
+    /*boton de volver al menu principal*/
+    .inmenu {
+        display: block;
+        margin: auto;
+        width: 110px;
+        height: 50px;
+        cursor: pointer;
+        color: white;
+        border-radius: 10px;
+        border:none;
+        background-color: #02b9bc;
+    }
+    
+    .inmenu:hover {
+        background-color: black;
+        color: white;
+        border: 2px solid white;
+    } 
+    
+}
+
+.interior-1 img {
+    display: block;
+    margin: auto;
+    width: 15rem;
+    height: 10rem;
+    border: black solid 2px;
+}
+
+/* realizar deposito*/
+input[type=submit] {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    background-color: #02b9bc;
+    border-radius: 18px;
+    transition: width 0.5s;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+    width: 114px;
+}
+
+div {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 30px;
+    width: 80%;
+    height: 60%;
+
+    label {
+        display: block;
+        margin: auto;
+        padding:5px;
+        color: #02b9bc;
+        text-align: center;
+        margin: 2px;
+        font-size: 18px;
+    }
+ }
+
+.col{ /*div parte 3*/
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 30px;
+    width: 80%;
+    height: 40%;
+}
+#demo1 {
+    display: none;
+    margin-top: 10px;
+    font-size: 30px;
+    padding: 10px;
+    background-color: black;
+}
+
+/* entre mis contactor*/
+p { 
+    width: 45%;
+    background-color: #02b9bc;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+p:hover{
+    opacity: 0.1;
+}
+
+input[type=text] {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: black;
+    border-radius: 10px;
+} 
+
+select{
+    color:#02b9bc;
+    width: 150px;
+    height: 30px;
+}

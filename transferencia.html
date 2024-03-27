@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/emergente.css" />
+    <link rel="stylesheet" href="/css/transferecia.css" />
+
+    <link rel="icon" href="/img/icono.jpg" />
+    <title>Transferencia</title>
+  </head>
+  <body>
+    <main>
+      <article class="container">
+        <section class="uno">
+          <div class="interior-1">
+            <img src="/img/LOGO.JPG" width="80px" />
+            <h1>APP WALLET</h1>
+
+            <img src="/img/click.png" width="200px" />
+            <h2>Tu billetera en un click.</h2>
+          </div>
+        </section>
+
+        <section class="uno">
+          <div class="interior">
+            <h1>Enviar Dinero</h1>
+            <form id="trans">
+              <input
+                id="buscar"
+                type="search"
+                placeholder="Contacto a Buscar"
+              />
+              <br />
+              <button type="submit">Buscar</button>
+              <br />
+              <label for="form3" style="font-size: 18px"
+                ><b>Monto a Transferir:</b></label
+              >
+              <input type="text" id="form3" />
+              <br />
+              <input type="submit" onclick="transferencia()" value="Enviar" />
+            </form>
+            <p id="demo3"></p>
+          </div>
+        </section>
+
+        <section class="uno">
+          <div class="interior">
+            <div style="width: 250px; margin-top: 50px; padding: 20px">
+              <button
+                class="connue"
+                id="open-button"
+                type="button"
+                onclick="openForm()"
+              >
+                Agregar Nuevo Contacto
+              </button>
+            </div>
+
+            <div class="form-popup" id="myForm">
+              <form id="emergente" action="#" class="form-container">
+                <h2>Nuevo Contacto</h2>
+                <label for="rut"><b>Rut</b></label>
+                <input
+                  type="text"
+                  placeholder="Número de Rut"
+                  id="rut"
+                  required
+                />
+                <label for="nombre"><b>Nombre Apellido</b></label>
+                <input
+                  type="text"
+                  placeholder="Nombre y Apellido"
+                  id="nombre"
+                  required
+                />
+                <label for="banco"><b>Nombre del Banco</b></label>
+                <input type="text" placeholder="Banco" id="banco" required />
+                <label for="Tcuenta"><b>Tipo de Cuenta</b></label>
+                <input
+                  type="text"
+                  placeholder="Tipo de Cuenta"
+                  id="tcuenta"
+                  required
+                />
+                <label for="ncuenta"><b>Número de Cuenta</b></label>
+                <input
+                  type="text"
+                  placeholder="Número de Cuenta"
+                  id="ncuenta"
+                  required
+                />
+                <label for="ncelular"><b>Número de Contacto</b></label>
+                <input
+                  type="text"
+                  placeholder="Número de Contacto"
+                  id="ncelular"
+                  required
+                />
+
+                <button class="eme" tupe="button" onclick="guardar()">
+                  Guardar</button
+                ><br />
+                <button class="eme" type="button" onclick="closeForm()">
+                  Cerrar
+                </button>
+              </form>
+            </div>
+            <p id="nuevo"></p>
+
+            <p>
+              <img src="/img/icono.jpg" /><br />
+              <a href="/menu.html"
+                ><input class="inmenu" type="submit" value="Menu Principal"
+              /></a>
+            </p>
+            <script>
+              function openForm() {
+                document.getElementById("myForm").style.display = "block";
+              }
+
+              function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+              }
+            </script>
+          </div>
+        </section>
+      </article>
+    </main>
+    <script src="/js/emergente.js"></script>
+    <script src="/js/transferencia.js"></script>
+  </body>
+</html>

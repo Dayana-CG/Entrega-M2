@@ -1,0 +1,179 @@
+/** Reset CSS */
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px black;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.uno {
+    display: block;
+    margin: auto;
+    width: 25rem;
+    height: 32rem;
+    border-radius: 20px;
+}
+
+.interior-1 {
+    width: 100%;
+    height: 100%;
+    border: black 2px solid;
+    border-radius: 20px;
+    background-color: black;
+
+    p {
+        text-align: center;
+        color: white;
+        font-size: 22px
+    }
+}
+
+.interior {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    border: black 2px solid;
+    border-radius: 20px;
+    background-color: #02b9bc;
+
+    .nuevo {
+        display: block;
+        margin: auto;
+        padding: 10px;
+        justify-content: center;
+        background-color: lightgray;
+        border-radius: 20px;
+        width: 100%;
+        height: 90%;
+
+        label {
+            display: block;
+            margin: auto;
+            color: #02b9bc;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        width: 60px;
+        padding-top: 150px;
+
+    }
+}
+
+.interior-1 img {
+    display: block;
+    margin: auto;
+    width: 15rem;
+    height: 10rem;
+    border: black solid 2px;
+}
+
+input[type=text] {
+    text-align: center;
+    display: block;
+    margin: auto;
+    height: 30px;
+    margin: auto;
+    font-size: 10px;
+}
+
+input[type=email] {
+    text-align: center;
+    display: block;
+    margin: auto;
+    height: 30px;
+    font-size: 10px;
+}
+
+input[type=password] {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 30px;
+    font-size: 10px;
+}
+
+input[type=tel] {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 30px;
+    font-size: 10px;
+}
+
+input[type=Submit] {
+    display: block;
+    margin: auto;
+    width: 85px;
+    height: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    background-color: #02b9bc;
+    border-radius: 20px;
+}
+
+input[type=Submit]:hover {
+    background-color: black;
+}
+
+p {
+    display: none;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    color:white;
+    font-size: 30px;
+    background-color: black;
+    border-radius: 15px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 45px;
+    cursor: pointer;
+    color: white;
+    background: #02b9bc;
+    border: 2px solid #02b9bc;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    width: 80px;
+    
+}

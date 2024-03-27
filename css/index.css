@@ -1,0 +1,204 @@
+/** Reset CSS */
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px black;
+    text-align: center;
+    padding: 1rem;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.uno {
+    display: block;
+    margin: auto;
+    width: 25rem;
+    height: 32rem;
+    border-radius: 20px;
+}
+
+.interior-1 {
+    width: 100%;
+    height: 100%;
+    border: black 2px solid;
+    border-radius: 20px;
+    background-color: black;
+
+    p {
+        text-align: center;
+        padding: 1rem;
+        color: white;
+        padding: 30px 30pX 0 30px;
+        font-size: 16px
+    }
+}
+
+.interior {
+    width: 100%;
+    height: 100%;
+    border: black 2px solid;
+    border-radius: 20px;
+    background-color: #02b9bc;
+    
+    .formu{
+        margin: auto;
+        justify-content: center;
+        padding: 35px;
+        background-color: lightgray;
+        border-radius: 30px;
+        width: 80%;
+        height: 60%;
+       
+        label {
+            display: block;
+            color: #02b9bc;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}
+
+.interior-1 img {
+    display: block;
+    margin: auto;
+    width: 15rem;
+    height: 10rem;
+    border: black solid 2px;
+}
+
+.unir {
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 65px;
+    border: 3px solid white;
+    cursor: pointer;
+    color: black;
+    background-color: #02b9bc;
+    border-radius: 20px;
+    transition: width 0.5s;
+}
+
+.unir:hover {
+    color: white;
+    width: 110px;
+}
+
+input[type=text] {
+    text-align: center;
+    display: block;
+    margin: auto;
+    height: 30px;
+    margin: auto;
+    font-size: 16px;
+}
+
+input[type=email] {
+    text-align: center;
+    display: block;
+    margin: auto;
+    height: 30px;
+    font-size: 16px;
+}
+
+input[type=password] {
+    text-align: center;
+    display: block;
+	margin: auto;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+}
+
+input[type=tel] {
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 65px;
+    height: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    background-color: #02b9bc;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: black;
+}
+iframe {
+    display: block;
+    margin: auto;
+    padding: 35px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+p {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social ul {
+    display: flex;
+    gap: 1rem;
+    padding-top: 50px;
+    list-style-type: none;
+    justify-content: center;
+      
+}
+
+.social ul li a {
+    display: inline-block;
+    color: white;
+    background: black;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.social ul li .icon-facebook {
+    background: blue;
+}
+
+.social ul li .icon-twitter {
+    background: rgb(219, 37, 174);
+}
+
+.social ul li .icon-instagram {
+    background: green;
+}
+
+.social ul li a:hover {
+    background-color: white;
+    padding-inline: 15px;
+}
